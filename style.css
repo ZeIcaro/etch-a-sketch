@@ -1,7 +1,18 @@
+:root {
+    --columns-row: 2;
+}
+
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    grid-template-columns: repeat(var(--columns-row), 1fr);
+    grid-template-rows: repeat(var(--columns-row), 1fr);
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
 }
 
 .block {
